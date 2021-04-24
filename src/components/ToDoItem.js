@@ -3,7 +3,7 @@ import React from "react"
 function ToDoItem(props){
     return (
         <div className="todo-item">
-            <input type="checkbox" checked={props.item.status}/>
+            <input type="checkbox" checked={props.item.status} onChange={() => props.CheckBox(props.item.id)}/>
             <p>{props.item.task}</p>
         </div>
     )
